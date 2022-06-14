@@ -1,0 +1,4 @@
+group_invitation,,,,,
+Field,Input,Key Type,Required,Desc,FK Table
+id,int,PK,NN,,
+name,varchar(128),,NN,,
