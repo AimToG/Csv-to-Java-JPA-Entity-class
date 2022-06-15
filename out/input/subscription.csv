@@ -1,0 +1,12 @@
+subscription,,,,,
+Field,Input,Key Type,FK Table,Required,Desc
+id,int,PK,,NN,설명1
+insert_ts,timestamp,,,NN,설명2
+user_group_id,int,FK,user_group,NN,설명3
+plan_id,int,FK,plan,NN,설명4
+offer_id,int,FK,offer,NN,설명5
+offer_start_date,date,,,,설명6
+offer_end_date,date,,,,설명7
+date_subscribed,date,,,NN,설명8
+valid_to,date,,,NN,설명9
+date_unsubscribed,date,,,,설명10

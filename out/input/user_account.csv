@@ -1,0 +1,12 @@
+user_account,,,,,
+Field,Input,Key Type,Required,Desc,FK Table
+id,int,PK,NN,유저 고유 ID. signup 액션 성공시 1~n까지 자동 발행. confirmation까지 안 갔어도 user로 인지됨,
+invitation_id,int,FK,,특정 그룹 초대로 합류한 사용자라면 group_invitation id,group_invitation
+first_name,varchar(50),,NN,사용자가 입력한 이름,
+last_name,varchar(50),,NN,사용자가 입력한 성,
+password,varchar(255),,NN,사용자 설정 암호 (암호화 방법에 대한 R&D 필요),
+email,varchar(128),,NN,회원 가입에 사용한 이메일 계정,
+gmail_id,varchar(128),,,자체 입력이 아닌 구글 이메일 가입을 사용한 경우 해당 사용자의 google ID (토큰 정보 저장이 의미 있는지 확인 필요),
+signup_time,timestamp,,NN,회원 가입을 완료한 시간 (UTC 기준),
+confirmation_code,text,,,시스템에서 발송한 이메일 인증 코드 (6글자 alphabet일듯?),
+confirmation_time,timestamp,,,이메일 인증 코드 발송 시간 (UTC 기준),
